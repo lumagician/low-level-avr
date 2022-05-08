@@ -1,15 +1,17 @@
-// 
+// ########################################
+//
 // author: Leo Hofer
 // date: 8.5.2022
 // description: PWM library example
 //
+// ########################################
 
 // AVR base libraries
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
 // user libraries
-#include "pwm.h"
+#include "timer.h"
 
 // global counter variable for use in InterruptServiceRoutine
 volatile uint8_t counter = 0;
@@ -22,18 +24,18 @@ ISR(TIMER0_OVF_vect)
 
 int main (void)
 {
-	// Initialization
+	// ############### Initialization ################
 
 	// config PD6 as output
 	DDRD |= (1<<PORTD6);
 
 	// Timer0 initialization
-	Timer0Init_Normal();
+	Timer0Init_Normal(TMR0_PRESCALER_64);
 
 	// enable global interrupts --> GIE = 1
 	sei();
 
-	// endless loop
+	// ############### endless loop ##################
 	while(1)
 	{
 		

@@ -1,7 +1,7 @@
 default: build
 
 build:
-	avr-gcc -mmcu=atmega328p main.c pwm.c -o main
+	avr-gcc -mmcu=atmega328p main.c timer.c -o main
 
 burn: build
 	avr-objcopy -O ihex -R .eeprom main main.hex
