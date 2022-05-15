@@ -4,8 +4,27 @@ Einfache toolchains für low level AVR programmierung. Da ich persönlich nicht 
 ## MacOS/Linux
 
 1. Dependencies installieren
-2. Build
-3. Flash
+
+    Brew installieren (packetmanager)
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+    avrdude installieren
+     ```bash
+    brew install avrdude
+    ```
+
+    avr-gcc installieren
+     ```bash
+    brew install avr-gcc
+    ```
+
+    avr-binutils installieren
+     ```bash
+    brew install avr-binutils
+    ```
+2. Makefile
+3. Build & Flash
 
 
 ## Windows
