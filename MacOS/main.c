@@ -23,7 +23,7 @@ int main (void) {
 void DelayOneSecond(void)
 {
 	// these nested loops take exactly 1 second to execute
-	for(uint16_t i = 0; i < 10000; i++)
+	for(uint16_t i = 0; i < 5000; i++)
 	{
 		for(uint8_t j = 0; j < 158; j++)
 		{
