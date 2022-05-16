@@ -3,8 +3,10 @@ Einfache toolchains für low level AVR programmierung. Da ich persönlich nicht 
 
 ```mermaid
     graph TD;
-    A-->B;
-    B-->A;
+    main.c --> avr-gcc;
+    avrio.h --> main.c;
+    avr-gcc --> avrdude;
+    avrdude --> atmega328p;
 ```
 
 ## MacOS/Linux
