@@ -39,17 +39,17 @@ Einfache toolchains für low level AVR programmierung. Da ich persönlich nicht 
 
     avrdude installieren
      ```bash
-    brew install avrdude
+    apt-get install avrdude
     ```
 
     avr-gcc installieren
      ```bash
-    brew install avr-gcc
+    apt-get install avr-gcc
     ```
 
     avr-binutils installieren
      ```bash
-    brew install avr-binutils
+    apt-get install avr-binutils
     ```
 2. Makefile
     Alle Seriellen Schnittstellen auflisten, 
@@ -81,6 +81,10 @@ Einfache toolchains für low level AVR programmierung. Da ich persönlich nicht 
 
 ## Windows
 
-Unter Windows funktionieren Tools wie make, avr-gcc oder cmake nicht standardmässig, darum muss man auf WinAVR zurückgreifen. WinAVR ist eine Windows Portierung der Tools, die für die AVR Entwicklung nötig sind. Da diese Tools ursprünglich nicht für Windows ausgelegt wurden ist die installation auch etwas komplizierter, wer das nicht will kann wie oben schon erwähnt eine Linux VM aufsetzen und.
+Unter Windows funktionieren Tools wie make, avr-gcc oder cmake nicht standardmässig, darum muss man auf WinAVR zurückgreifen. WinAVR ist eine Windows Portierung der Tools, die für die AVR Entwicklung nötig sind. Da diese Tools ursprünglich nicht für Windows ausgelegt wurden ist die installation auch etwas komplizierter, wer das nicht will kann wie oben schon erwähnt eine Linux VM aufsetzen.
 
 --> [WinAVR](https://www.mikrocontroller.net/articles/WinAVR)
+
+# TODO
+- [ ] Windows anleitung
+- [ ] Links for virtualbox setup
