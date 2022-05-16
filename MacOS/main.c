@@ -9,13 +9,12 @@ int main (void) {
 	// globale Interrupts aktivieren --> GIE = 1
 	sei();
 
-	// endless loop blinks with a frequency of 0.5 Hz
+	// infinit loop
 	while(1)
 	{
 		PORTB = 0xff;
 		DelayOneSecond();
 		PORTB = 0x00;
-		DelayOneSecond();
 		DelayOneSecond();
 	}
 }

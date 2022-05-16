@@ -3,7 +3,7 @@ Einfache toolchains für low level AVR programmierung. Da ich persönlich nicht 
 
 ## MacOS/Linux
 
-1. Dependencies installieren
+1. Dependencies installieren (MacOS)
 
     Brew installieren (packetmanager)
     ```bash
@@ -28,6 +28,8 @@ Einfache toolchains für low level AVR programmierung. Da ich persönlich nicht 
 
 
 ## Windows
+
+Unter Windows funktionieren Tools wie make, avr-gcc oder cmake nicht standardmässig, darum muss man auf WinAVR zurückgreifen. WinAVR ist eine Windows Portierung der Tools, die für die AVR Entwicklung nötig sind. Da diese Tools ursprünglich nicht für Windows ausgelegt wurden ist die installation auch etwas komplizierter, wer das nicht will kann wie oben schon erwähnt eine Linux VM aufsetzen und.
 
 1. Dependencies installieren
 2. Build
